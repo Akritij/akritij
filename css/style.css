@@ -213,6 +213,9 @@ p {
     display: inline-block;
     padding: 0 1.2em;
 }
+.work-info ul {
+    color: white;
+}
 .work-info h5 span.glyphicon {
     font-size: 0.9em;
     color: #fff;
@@ -269,6 +272,70 @@ p {
     color: #000;
 }
 /*--//education--*/
+/*-- modal-basic --*/
+.modal{
+    background: rgba(64,13,28,0.85);
+	background-size:cover; 
+	padding: 0 !important; 
+}
+.modalTarget {
+    z-index: 15000;
+}
+.modal-dialog {
+    width: 60%; 
+	margin:4em auto;
+}
+.modal-content {
+    background: url(../images/bg3.jpg) #000 repeat;
+}
+.modal-body.modal-spa {
+    padding: 0  1em 3em;
+}
+.modal-header {
+    border: none;
+    margin-bottom: 2em;
+	padding: 2em;
+}
+button.close {
+    color: #fff;
+    opacity: 1;
+    font-size: 3em;
+    padding: 0;
+    margin: 0 0;
+    outline: none;
+    font-weight: 100;
+    float: none;
+    position: absolute;
+    right: 7%;
+}
+.close:hover, .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: 1;
+}
+h4.modal-title {
+    font-size: 3em;
+    color: #fff;
+	text-align:center;
+}
+h3.modal-title.subject {
+    font-size: 2em;
+    color: #fff;
+    float: left;
+}
+h3.modal-title.date {
+    font-size: 2em;
+    color: #fff;
+    float: right;
+}
+h5.modal-title {
+    clear: both;
+    font-size: 2em;
+    color: #fff;
+}
+/*-- //modal-basic --*/
 /*--skills--*/
 .skills{
 	background:#000;
@@ -375,7 +442,7 @@ h2.resp-accordion {
 .grid {
 	position: relative;
 	overflow:hidden;
-	background: #000;
+	background: #1D9898;
 }
 .grid img {
 	opacity: 0.8;
@@ -434,10 +501,21 @@ h2.resp-accordion {
     overflow: hidden;
     padding: 0.5em 0;
 	-moz-opacity: 0;
-    opacity: 0;
+    opacity: 1;
     text-transform: uppercase;
     font-size: 2em;
     color: #fff;
+}
+.grid-left {
+    max-height: 233px;
+}
+.grid-right {
+    overflow-y: auto;
+    height: 233px;
+    padding-left: 30px;
+    border: 2px solid black;
+    background: #1DB0B0;
+    color: black;
 }
 .grid h3 span {
     font-weight: 800;
@@ -776,6 +854,12 @@ h3.title {
     padding: 0 .5em;
 	float: left;
 }
+.grid-left {
+    width: 33.33%;
+}
+.grid-right {
+    width : 66.66%
+}
 .grid .figcaption {
     padding: 1em 1.5em;
 }
@@ -956,6 +1040,13 @@ p {
 .portfolio-grids {
     width: 50%;
 }
+
+.grid-left {
+    width: 50%;
+}
+.grid-right {
+    width : 50%
+}
 .grid .figcaption {
     padding: 0.5em 1em;
 }
@@ -982,6 +1073,15 @@ p {
     width: 100%;
     float: none;
     padding: 0;
+}
+
+.grid-left {
+    width: 100%;
+}
+.grid-right {
+    padding: 0;
+    margin: 0;
+    width : 100%
 }
 .contact-form input[type="text"] {
     width: 100%;
@@ -1096,6 +1196,8 @@ h3.title {
 .contact-form textarea {
     font-size: 0.9em;
 }
+
+   
 
 }
 /*--//responsive-design---*/
