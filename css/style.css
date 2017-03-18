@@ -858,7 +858,8 @@ h3.title {
     width: 33.33%;
 }
 .grid-right {
-    width : 66.66%
+    width : 66.66%;
+    padding-left : 30px;
 }
 .grid .figcaption {
     padding: 1em 1.5em;
@@ -1079,7 +1080,7 @@ p {
     width: 100%;
 }
 .grid-right {
-    padding: 0;
+    padding: 30px;
     margin: 0;
     width : 100%
 }
